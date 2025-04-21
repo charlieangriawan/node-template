@@ -21,3 +21,12 @@ $ kubectl apply -f kubernetes/deployment.yaml
 $ kubectl apply -f kubernetes/service.yaml
 $ minikube service app-service
 ```
+
+## Deploying the application
+
+AWS ECS:
+```bash
+$ terraform -chdir=terraform-ecs init
+$ terraform -chdir=terraform-ecs apply
+$ ./scripts/ecr.sh
+```
