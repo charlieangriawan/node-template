@@ -1,0 +1,13 @@
+{
+  "eslint.validate": ["typescript"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+  }
+}

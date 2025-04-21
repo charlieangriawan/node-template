@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "@components/*": ["src/components/*"],
+            "@utils/*": ["src/utils/*"],
+        },
+        // types
+        "strict": true,
+        "alwaysStrict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        // modules
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "skipLibCheck": true,
+    },
+    "include": ["src/**/*"],
+    "exclude": ["dist", "node_modules"]
+}
