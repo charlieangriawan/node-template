@@ -14,3 +14,10 @@ $ make logs   # Follow container logs
 $ make down   # Stop and remove the container
 $ make clean  # Remove all traces of the container/image
 ```
+
+Running the application in kubernetes:
+```bash
+$ kubectl apply -f kubernetes/deployment.yaml
+$ kubectl apply -f kubernetes/service.yaml
+$ minikube service app-service
+```
